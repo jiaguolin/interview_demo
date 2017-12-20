@@ -5,9 +5,9 @@ FROM node
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app
-RUn cd /app
+RUN cd /app
 RUN npm install 
 #RUN npm install --production --silent && mv node_modules ../
 COPY . /app
-EXPOSE 8080
+EXPOSE 5000
 CMD ["node", "bin/www"]
