@@ -47,6 +47,7 @@ router.get('/getUser', function (req, res, next) {
   // if (req.session.user) {
     res.json({ code: 200, data: _.values(users), me: req.session.user });
     res.end();
+    //test
     // return;
   // }
   // res.json({ code: 401, info: '会话过期,需要重新登录' });
